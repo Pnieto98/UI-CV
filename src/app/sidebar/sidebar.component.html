@@ -1,0 +1,47 @@
+<div class="sidebar">
+    <div class="elements">
+        <div class="left">
+            <a class="logo">
+                <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="28.5" fill="white" stroke="url(#paint0_linear_17:63)" stroke-width="3" />
+                    <path d="M7.19934 30.3007L29.2291 13.1578L29.2291 47.4435L7.19934 30.3007Z"
+                        fill="url(#paint1_linear_17:63)" />
+                    <path d="M52.8005 30.3007L30.7708 47.4435V13.1578L52.8005 30.3007Z"
+                        fill="url(#paint2_linear_17:63)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_17:63" x1="30" y1="0" x2="30" y2="60"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EBD382" />
+                            <stop offset="1" stop-color="#5D7587" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_17:63" x1="7.19934" y1="30.3007" x2="29.2291" y2="30.3007"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#5D7587" />
+                            <stop offset="1" stop-color="#EBD382" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_17:63" x1="52.8005" y1="30.3007" x2="30.7708" y2="30.3007"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#5wD7587" />
+                            <stop offset="1" stop-color="#EBD382" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <p>
+                    PedroBriefcase
+                </p>
+            </a>
+        </div>
+        <div class="center">
+            <a class="element" *ngFor="let element of elementCenter">
+                <img src="../../{{ element.icono }}" alt="{{element.icono}}">
+                <p class="text-element">{{ element.nombre }}</p>
+            </a>
+        </div>
+        <div class="right">
+            <a class="element" *ngFor="let element of elementRight">
+                <img src="../../{{ element.icono }}" alt="{{element.icono}}">
+                <p class="text-element">{{ element.nombre }}</p>
+            </a>
+        </div>
+    </div>
+</div>

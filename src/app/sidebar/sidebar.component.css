@@ -1,0 +1,70 @@
+/*************CONFIG SIDEBAR **/
+.sidebar {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    top:  60px;
+    height: 55.85px;
+    background-color: #FBFBFB;
+    border-radius: 15px;
+    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.3));
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/**ELEMENTS**/
+.elements {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 100%;
+    
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 10px;
+    transition: all .2s ease-in;
+    cursor:pointer;
+}
+
+.element:hover   {
+   transform: scale(1.2);
+}
+.element p {
+    text-align: center;
+    margin: 0;
+    font-weight:500;
+}
+.element img {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+/**DIRECTIONS ELEMENTS **/
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+.left {
+    margin-left: 15px;
+}
+.left .logo{
+    display: flex;
+    gap: 10px;
+}
+.left p {
+    font-weight: bold;
+    font-size: 13px;
+}
+.center {
+    display: flex;
+    justify-content: space-between;
+}
+
