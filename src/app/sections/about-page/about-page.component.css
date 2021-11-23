@@ -1,0 +1,27 @@
+.about-title {
+    color: white;
+    font-family: Playfair Display;
+    margin-top: 10px;
+    
+}
+.about-title h1 {
+    font-weight: 300;
+    font-style: normal;
+    font-weight: normal;
+    margin: 1px;
+    font-size: 40px;
+}
+.about-title h1 span {
+    color: var(--c-primary-y);
+}
+.content p {
+    margin-top: 10px;
+    color: white;
+    font-weight: 200;
+    font-size: 23px;
+    line-height: 32px;
+}
+.content p span {
+    color: var(--c-primary-y);
+    font-weight: bold;
+}

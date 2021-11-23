@@ -72,6 +72,9 @@ body {
   strong {
     font-weight: bolder;
   }
+  p {
+    margin: 0;
+  }
   
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -323,3 +326,18 @@ body {
   [hidden] {
     display: none;
   }
+
+
+  /**
+  * GLOBAL STYLES
+  */
+
+  .title p{ 
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+}
+.title {
+  padding-bottom:13px ;
+  border-bottom: 2px solid var(--c-primary-y);
+}

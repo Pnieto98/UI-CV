@@ -1,0 +1,16 @@
+<div class="title">
+    <p>
+        {{ title }}
+    </p>
+</div>
+<div class="content">
+    <div class="card-skill" *ngFor="let skill of skills">
+        <p class="skill-title">{{skill.name}}</p>
+        <div class="box-wrap">
+            <div class="box-skill" *ngFor="let element of skill.skills  ">
+                <img src="../../../{{element.img}}" alt="">
+                <p>{{ element.name }}</p>
+            </div>
+        </div>
+    </div>
+</div>

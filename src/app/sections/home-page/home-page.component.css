@@ -1,0 +1,66 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.title-home {
+    position: relative;
+    top: 50%;
+}
+.title-home span {
+    font-family: Playfair Display;
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+}
+.title-home h1 {
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: 900;
+color: #ffffff;
+font-size: 3.2rem;
+margin: 3px 0px;
+}
+.title-home button {
+    padding: 10px 20px;
+    margin: 15px 3px;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: .3s all ease-in;
+}
+.title-home .skill:hover {
+   border: 2px solid var(--c-primary-y);
+   background-color: transparent;
+   color: var(--c-primary-y);
+}
+@keyframes contact {
+    0% {
+        padding: 10px 20px;
+    }
+    50% {
+        background-color: transparent;
+        color: var(--c-primary-y);
+        padding: 10px 110px;
+    }
+}
+.title-home .skill {
+    background-color: var(--c-primary-y);
+    border: none;
+    color: var(--c-primary-b);
+    font-weight: 500;
+    
+}
+.title-home .contact {
+    background-color: transparent;
+    border: 2px solid var(--c-primary-y);
+    color: var(--c-primary-y);
+    font-weight: 500;
+    animation-name: contact;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.title-home p {
+    width: 450px;
+    color: white;
+    font-weight: 100;
+    font-size: 1.1rem;
+}

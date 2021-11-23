@@ -1,7 +1,7 @@
 <div class="sidebar">
     <div class="elements">
         <div class="left">
-            <a class="logo">
+            <a class="logo" >
                 <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="30" cy="30" r="28.5" fill="white" stroke="url(#paint0_linear_17:63)" stroke-width="3" />
                     <path d="M7.19934 30.3007L29.2291 13.1578L29.2291 47.4435L7.19934 30.3007Z"
@@ -32,13 +32,13 @@
             </a>
         </div>
         <div class="center">
-            <a class="element" *ngFor="let element of elementCenter">
+            <a class="element" *ngFor="let element of elementCenter" routerLink="{{ element.route }}" routerLinkActive="active">
                 <img src="../../{{ element.icono }}" alt="{{element.icono}}">
                 <p class="text-element">{{ element.nombre }}</p>
             </a>
         </div>
         <div class="right">
-            <a class="element" *ngFor="let element of elementRight">
+            <a class="element" *ngFor="let element of elementRight"  routerLink="{{ element.route }}" routerLinkActive="active">
                 <img src="../../{{ element.icono }}" alt="{{element.icono}}">
                 <p class="text-element">{{ element.nombre }}</p>
             </a>
