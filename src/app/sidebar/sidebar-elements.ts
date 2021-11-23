@@ -15,9 +15,9 @@ export let sidebarElements =
         posicion: "center"
     },
     {
-        nombre: "Works",
+        nombre: "Jobs",
         icono: "assets/sidebar-icons/works.png",
-        route: "Works",
+        route: "Jobs",
         posicion: "center"
     },
     {

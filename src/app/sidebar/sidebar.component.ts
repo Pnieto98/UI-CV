@@ -16,5 +16,8 @@ export class SidebarComponent implements OnInit {
     this.elementCenter = sidebarElements.filter(sidebar =>  sidebar.posicion == "center");
     this.elementRight   = sidebarElements.filter(sidebar => sidebar.posicion == "right");
   }
+  routing(): void {
+    console.log("hola");
+  }
 
 }
